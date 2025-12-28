@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net8.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+	<Platforms>x64</Platforms>
+	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+	<Folder Include="DbgEng\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Dependencies\dbgeng.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		<Link>dbgeng.dll</Link>
+    </None>
+    <None Update="Dependencies\dbghelp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		<Link>dbghelp.dll</Link>
+    </None>
+    <None Update="Dependencies\symsrv.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		<Link>symsrv.dll</Link>
+    </None>
+  </ItemGroup>
+
+</Project>
